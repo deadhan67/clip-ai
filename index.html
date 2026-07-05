@@ -1,10 +1,75 @@
-clip-ai/
-│
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-│
-└── backend/
-    ├── app.py
-    └── requirements.txt
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clip AI</title>
+
+  <style>
+    body{
+      margin:0;
+      background:#0f172a;
+      color:white;
+      font-family:Arial,sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .box{
+      width:90%;
+      max-width:400px;
+      text-align:center;
+    }
+
+    input{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    button{
+      margin-top:20px;
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:10px;
+      background:#2563eb;
+      color:white;
+      font-size:18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+<h1>🎬 Clip AI</h1>
+
+<p>Paste YouTube Video Link</p>
+
+<input id="url" placeholder="https://youtube.com/...">
+
+<button onclick="generate()">
+Generate Clips
+</button>
+
+</div>
+
+<script>
+function generate(){
+let url=document.getElementById("url").value;
+
+if(url==""){
+alert("Please paste YouTube link");
+return;
+}
+
+alert("Coming Soon...");
+}
+</script>
+
+</body>
+</html>
