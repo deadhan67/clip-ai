@@ -1,3 +1,10 @@
-ClipAI
- ├── frontend
- └── backend
+clip-ai/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+│
+└── backend/
+    ├── app.py
+    └── requirements.txt
